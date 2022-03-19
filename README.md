@@ -1,2 +1,2 @@
-# sumairaijaz
+# sumairlaghari.github.io
 My Portfolio.

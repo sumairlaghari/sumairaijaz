@@ -56,6 +56,8 @@
 
     <!--Responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
 
@@ -95,8 +97,8 @@
                                         <li><a class="smooth-menu" href="#services">Services</a></li>
                                         <li><a class="smooth-menu" href="#work">Portfolio</a></li>
                                         <!-- <li><a class="smooth-menu" href="#github">Github Repositories</a></li> -->
-                                        <!-- <li><a class="smooth-menu" href="#leadership">Leadership</a></li>
-                                        <li><a class="smooth-menu" href="#certificates">Certificates</a></li> -->
+                                        <!-- <li><a class="smooth-menu" href="#leadership">Leadership</a></li> -->
+                                        <li><a class="smooth-menu" href="#certificates">Certificates</a></li>
                                         <li><a class="smooth-menu" href="#contact">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -167,7 +169,7 @@
                 <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
                     <div class="about-text-left">
                         <h2>Sumair Aijaz</h2> 
-                        <h3>Mobile App Developer</h3>
+                        <h3>React Native Developer</h3>
                         <!-- <h3>React Native, javaScript Developer</h3> -->
                         <p>
                             Hello i am a CS Graduate, I have enough experience to deliver good quality products to my clients and provide them with best solutions and make their ideas into complete mobile apps. I am very passionate and dedicated to my work. I enjoy every step to the software development process from discussion and collaboration to concept and execution. More importantly I am most satisfied when I deliver the final product as per users requirements. Indeed through my experience as Mobile App developer, I have acquire necessary skills and knowledge to make project a success! I am always open to discuss the new ideas.
@@ -212,7 +214,7 @@
                                     <!-- skillbar -->
                                     <div class="skillbar" data-percent="90%"> 
 
-                                        <h6 class="skillbar-title">javaScript</h6> 
+                                        <h6 class="skillbar-title">javaScript / typeScript</h6> 
                                         <h6 class="skillbar-percent">90%</h6> 
 
                                         <div class="skillbar-bar">
@@ -247,6 +249,57 @@
                                     <div class="skillbar" data-percent="75%"> 
 
                                         <h6 class="skillbar-title">Node.js</h6> 
+                                        <h6 class="skillbar-percent">75%</h6> 
+
+                                        <div class="skillbar-bar">
+                                            <div class="skillbar-child"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end skillbar -->
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <!-- skillbar -->
+                                    <div class="skillbar" data-percent="75%"> 
+
+                                        <h6 class="skillbar-title">Express.js</h6> 
+                                        <h6 class="skillbar-percent">75%</h6> 
+
+                                        <div class="skillbar-bar">
+                                            <div class="skillbar-child"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end skillbar -->
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <!-- skillbar -->
+                                    <div class="skillbar" data-percent="65%"> 
+
+                                        <h6 class="skillbar-title">React.js</h6> 
+                                        <h6 class="skillbar-percent">65%</h6> 
+
+                                        <div class="skillbar-bar">
+                                            <div class="skillbar-child"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end skillbar -->
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <!-- skillbar -->
+                                    <div class="skillbar" data-percent="75%"> 
+
+                                        <h6 class="skillbar-title">MongoDB / Mongoose</h6> 
                                         <h6 class="skillbar-percent">75%</h6> 
 
                                         <div class="skillbar-bar">
@@ -404,7 +457,7 @@
                             <i class="fa-solid fa-mobile"></i>
                         </div>
                         <div class="services-content">
-                            <h3>Mobile App Development</h3>
+                            <h3>React Native Development</h3>
                         </div>
 
                     </div>
@@ -489,7 +542,7 @@
                         <p class="line-one"></p>
                     </div>
                 </div>
-            </div>
+        </div>
       <div class="row">
        
           <div class="col-md-4">
@@ -514,15 +567,18 @@
           </div>
        
         <div class="col-md-4">
-          <div class="work-box">
+          <div class="work-box divcursor" onclick="showModal(
+            ['project/employee-tracking-app/et1.png','project/employee-tracking-app/et2.png','project/employee-tracking-app/et3.png','project/employee-tracking-app/et4.png','project/employee-tracking-app/et5.png','project/employee-tracking-app/et6.png','project/employee-tracking-app/et7.png','project/employee-tracking-app/et8.png']
+            )">
             <!-- <a href="https://github.com/sumairlaghari/SUSocialApp" target="_blank"> -->
-              <div class="work-img">
-                <img src="project/Empty.png" alt="" class="img-fluid">
+            <!-- <a href="project/employee-tracking-app/et1.png" data-lightbox="gallery-mf"> -->
+              <div class="work-img" style="display: grid; background-color: #f2f2f2;">
+                <img src="project/employee-tracking-app/et1.png" alt="" class="img-fluid" style="justify-self: center; width: 35.8241%; height: auto;">
               </div>
               <div class="work-content">
                 <div class="row">                    
                   <div class="col-sm-8">
-                    <h2 class="w-title"> Pending <span class="donation"><br><br>Pending...<br><br><br></span></h5>                   
+                    <h2 class="w-title"> Tracking App <span class="donation"><br><br>location tracking app which tracks user current location in realtime.</span></h5>                   
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
@@ -530,9 +586,83 @@
                   </div>
                 </div>
               </div>
-            </a>
+            <!-- </a> -->
           </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="work-box divcursor" onclick="showModal(
+                ['project/breez/b1.png','project/breez/b2.png','project/breez/b3.png','project/breez/b4.png','project/breez/b5.png','project/breez/b6.png','project/breez/b7.png','project/breez/b8.png','project/breez/Screenshot_20221208-201016_Expo Go.jpg','project/breez/Screenshot_20221208-201058_Expo Go.jpg']
+                )" >
+              <!-- <a href="https://github.com/sumairlaghari/SUSocialApp" target="_blank"> -->
+              <!-- <a href="project/employee-tracking-app/et1.png" data-lightbox="gallery-mf"> -->
+                <div class="work-img" style="display: grid; background-color: #f2f2f2;">
+                  <img src="project/breez/b6.png" alt="" class="img-fluid" style="justify-self: center; width: 35.8241%; height: auto;">
+                </div>
+                <div class="work-content">
+                  <div class="row">                    
+                    <div class="col-sm-8">
+                      <h2 class="w-title"> Breez App (Client) <span class="donation"><br><br>Breez App Created for Client.<br><br><br></span></h5>                   
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+          <div class="col-md-4">
+            <div class="work-box divcursor" onclick="showModal(
+                ['project/pt-app/ptapp1.png','project/pt-app/ptapp2.png','project/pt-app/ptapp3.png','project/pt-app/ptapp4.png','project/pt-app/ptapp5.png','project/pt-app/ptapp6.png','project/pt-app/ptapp7.png','project/pt-app/ptapp8.png']
+                )" >
+              <!-- <a href="https://github.com/sumairlaghari/SUSocialApp" target="_blank"> -->
+              <!-- <a href="project/employee-tracking-app/et1.png" data-lightbox="gallery-mf"> -->
+                <div class="work-img" style="display: grid; background-color: #f2f2f2;">
+                  <img src="project/pt-app/ptapp1.png" alt="" class="img-fluid" style="justify-self: center; width: 35.8241%; height: auto;">
+                </div>
+                <div class="work-content">
+                  <div class="row">                    
+                    <div class="col-sm-8">
+                      <h2 class="w-title"> PT App (Client) <span class="donation"><br><br>Trainer/Gym App for Client.<br><br><br></span></h5>                   
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- </a> -->
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box divcursor" onclick="showModal(
+                ['project/others/mooli.png','project/others/ss1.png','project/others/c1.png','project/others/c2.png','project/others/c3.png']
+                )" >
+              <!-- <a href="https://github.com/sumairlaghari/SUSocialApp" target="_blank"> -->
+              <!-- <a href="project/employee-tracking-app/et1.png" data-lightbox="gallery-mf"> -->
+                <div class="work-img" style="display: grid; background-color: #f2f2f2;">
+                  <img src="project/others/mooli.png" alt="" class="img-fluid" style="justify-self: center; width: 35.8241%; height: auto;">
+                </div>
+                <div class="work-content">
+                  <div class="row">                    
+                    <div class="col-sm-8">
+                      <h2 class="w-title"> Random Screens <span class="donation"><br><br>Other Random UI Screens.<br><br><br></span></h5>                   
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- </a> -->
+            </div>
+          </div>
 
         <div class="col-md-4">
           <div class="work-box">
@@ -551,7 +681,7 @@
                   </div>
                 </div>
               </div>
-            </a>
+            <!-- </a> -->
           </div>
         </div>
 
@@ -561,6 +691,37 @@
   <!--/ Section Portfolio End /-->
 
 
+  <!-- Trigger/Open The Modal -->
+  <!-- <button id="myBtn">Open Modal</button> -->
+  
+  <!-- The Modal -->
+  <div id="myModal" class="slidermodal">
+  
+      <!-- Modal content -->
+      <div class="slidermodal-content">
+        <span class="sliderclose">&times;</span>
+        <br/>
+        <div id="add_me" class="slideshow-container">
+    
+    <!-- <div class="mySlides sliderfade">
+      <div class="slidernumbertext">1 / 10</div>
+      <br/>
+        <img src="project/breez/b1.png" style="height: 100%; justify-self: center;">   
+    </div>
+    
+    <a class="sliderprev" onclick="plusSlides(-1)">❮</a>
+    <a class="slidernext" onclick="plusSlides(1)">❯</a> -->
+    
+    </div>
+    <br>
+    
+    <div id="add_dots" style="text-align:center">
+      <!-- <span class="sliderdot" onclick="currentSlide(1)"></span>  -->
+    </div>
+    
+      </div>
+    
+    </div>
     
    <!--  github repo starts -->
 
@@ -672,7 +833,7 @@
     <!--  Certificates starts -->
 
 
-   <!-- <div class="contact-area section-padding" id="certificates">
+   <div class="contact-area section-padding" id="certificates">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -686,16 +847,16 @@
 
             <div class="row ">
 
-                <a href="xyz.jpg" data-lightbox="gallery-mf">
+                <a href="certificates/Coursera 2WXLJAEFTNTG-1.jpg" data-lightbox="gallery-mf">
                 <div class="col-md-3 col-sm-6">
                     <div class="single-contact text-center wow fadeInDown" data-wow-delay="0.4s">
-                        <span class="iconify" data-icon="carbon:certificate" data-inline="false" style="color: #FF5454;" data-width="40" data-height="40"></span>
-                        <h2>xyz</h2>
+                        <span class="iconify" data-icon="carbon:certificate" data-inline="false" style="color: #2F9599;" data-width="40" data-height="40"></span>
+                        <h2>Google IT Support Specialist</h2>
                                              
                     </div>
                 </div>
                 </a>
-
+<!-- 
                 <a href="xyz.jpg" data-lightbox="gallery-mf">
                 <div class="col-md-3 col-sm-6">
                     <div class="single-contact text-center wow fadeInDown" data-wow-delay="0.6s">
@@ -724,10 +885,10 @@
                                    
                     </div>
                 </div>
-                </a>
+                </a> -->
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!--  GCP Badges ends -->
 
@@ -850,6 +1011,7 @@
 
     <!--lightbox js-->
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="slider/slider.js"></script>
     
 </body>
 

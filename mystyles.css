@@ -1,0 +1,8 @@
+/* .divcursor {
+    
+  } */
+  
+  .divcursor:hover,
+  .divcursor:focus {
+    cursor: pointer;
+  }

@@ -1,0 +1,132 @@
+/* The Modal (background) */
+.slidermodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .slidermodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 94%;
+  }
+  
+  /* The Close Button */
+  .sliderclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .sliderclose:hover,
+  .sliderclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  /* * {box-sizing: border-box} */
+/* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {display: none;height: 100%; width: 100%;}
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 94%;
+}
+
+/* Next & previous buttons */
+.sliderprev, .slidernext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #717171;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slidernext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.sliderprev:hover, .slidernext:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slidertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slidernumbertext {
+  color: #717171;
+  font-size: 12px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.sliderdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideractive, .sliderdot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.sliderfade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes sliderfade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .sliderprev, .slidernext,.slidertext {font-size: 11px}
+}

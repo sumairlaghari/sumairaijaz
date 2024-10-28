@@ -1,0 +1,11 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.tap2earn",
+        "sha256_cert_fingerprints": ["3D:1E:3E:5F:F0:AA:D9:4B:90:67:2C:B4:3F:41:5D:FF:D8:E8:53:23:A8:AD:1A:D5:9F:7F:17:E1:1B:89:A1:1B"]
+      }
+    }
+  ]
+  
